@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeda Lash Designer | Anamnese Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              nude: '#F5EBE0',
+              rose: '#E3B5A4',
+              bege: '#D5BDAF',
+              dourado: '#D4AF37',
+              dark: '#1A1A1A'
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+              mont: ['Montserrat', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body { background-color: #FAF9F6; }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(213, 189, 175, 0.3);
+      }
+      .input-elegant {
+        border: 0;
+        border-bottom: 1px solid #D5BDAF;
+        background: transparent;
+        transition: border-color 0.3s ease;
+      }
+      .input-elegant:focus {
+        outline: none;
+        border-bottom: 2px solid #E3B5A4;
+      }
+      /* Previne zoom automático em inputs no iPhone */
+      @media screen and (max-width: 768px) {
+        input, textarea { font-size: 16px !important; }
+      }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.284.0",
+    "jspdf": "https://esm.sh/jspdf@2.5.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+</head>
+<body class="text-dark antialiased">
+    <div id="root"></div>
+</body>
+</html>
